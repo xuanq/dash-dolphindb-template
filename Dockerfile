@@ -39,4 +39,5 @@ COPY ./app ./app
 
 # fasti api project
 # CMD ["uvicorn", "app.main:app","--host", "0.0.0.0", "--port", "8000"]
-CMD ["sleep", "infinity"]
+# dash project
+CMD ["gunicorn", "app.main:server", "--bind", "0.0.0.0:8000", "--workers", "4"]

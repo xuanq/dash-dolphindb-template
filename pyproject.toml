@@ -8,6 +8,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+dash = "^2.18.0"
+pandas = "^2.2.2"
+gunicorn = "^23.0.0"
 
 
 [build-system]
